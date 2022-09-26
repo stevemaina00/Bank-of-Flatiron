@@ -3,15 +3,25 @@ import TransactionsList from "./TransactionsList";
 import Search from "./Search";
 import AddTransactionForm from "./AddTransactionForm";
 
-export default function AccountContainer() {
-  return (
-    <div>
-      <Search />
-      <AddTransactionForm />
-      <TransactionsList />
-      <h1>Hello</h1>
-      
-    </div>
-  );
+function AccountContainer({
+	transactions,
+	handleAddTransaction,
+	handleSearch,
+	handleDeleteTransaction,
+}) {
+	return (
+		<div>
+			<Search handleSearch={handleSearch} />
+			<AddTransactionForm
+				handleAddTransaction={handleAddTransaction}
+				transactions={transactions}
+			/>
+			<TransactionsList
+				transactions={transactions}
+				handleDeleteTransaction={handleDeleteTransaction}
+			/>
+		</div>
+	);
 }
 
+export default AccountContainer;
