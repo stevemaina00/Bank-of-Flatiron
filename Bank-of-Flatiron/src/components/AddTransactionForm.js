@@ -1,6 +1,6 @@
 import React from "react";
 
-function AddTransactionForm({ handleAddTransaction }) {
+export default function AddTransactionForm({ handleAddTransaction }) {
 	const [formData, setFormData] = React.useState({
 		date: "",
 		description: "",
@@ -79,5 +79,4 @@ function AddTransactionForm({ handleAddTransaction }) {
 	);
 }
 
-export default AddTransactionForm;
 

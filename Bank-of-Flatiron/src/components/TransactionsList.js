@@ -1,7 +1,7 @@
 import React from "react";
 import Transaction from "./Transaction";
 
-function TransactionsList({ transactions, handleDeleteTransaction }) {
+export default function TransactionsList({ transactions, handleDeleteTransaction }) {
 	const deleteTransaction = async (transId) => {
 		console.log(transId);
 		try {
@@ -44,4 +44,3 @@ function TransactionsList({ transactions, handleDeleteTransaction }) {
 	);
 }
 
-export default TransactionsList;

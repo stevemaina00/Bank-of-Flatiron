@@ -1,6 +1,6 @@
 import React from "react";
 
-function Search({ handleSearch }) {
+export default function Search({ handleSearch }) {
 	return (
 		<div className="ui large fluid icon input">
 			<input
@@ -16,4 +16,3 @@ function Search({ handleSearch }) {
 	);
 }
 
-export default Search;

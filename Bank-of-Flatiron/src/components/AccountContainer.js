@@ -3,7 +3,7 @@ import TransactionsList from "./TransactionsList";
 import Search from "./Search";
 import AddTransactionForm from "./AddTransactionForm";
 
-function AccountContainer({
+export default function AccountContainer({
 	transactions,
 	handleAddTransaction,
 	handleSearch,
@@ -23,5 +23,3 @@ function AccountContainer({
 		</div>
 	);
 }
-
-export default AccountContainer;

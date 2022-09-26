@@ -1,7 +1,7 @@
 import React from "react";
 import AccountContainer from "./AccountContainer";
 
-function App() {
+export default function App() {
 	const [transactions, setTransactions] = React.useState([]);
 
 	React.useEffect(() => {
@@ -57,4 +57,4 @@ function App() {
 	);
 }
 
-export default App;
+ 

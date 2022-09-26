@@ -2,7 +2,7 @@
 
 import React from "react";
 
-function Transaction({
+export default function Transaction({
 	transaction: { id, date, category, amount, description },
 	deleteTransaction,
 }) {
@@ -19,4 +19,3 @@ function Transaction({
 	);
 }
 
-export default Transaction;
